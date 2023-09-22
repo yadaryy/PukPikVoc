@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		255D9E0F690989D7C7E4EF5F /* Pods_PukPikGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AABA402EE232C9528E19423 /* Pods_PukPikGameTests.framework */; };
+		67ABA1BD01F152097FEF55D1 /* Pods_PukPikGame_PukPikGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A20BB895953E921A86656A /* Pods_PukPikGame_PukPikGameUITests.framework */; };
+		D0B097ED3673EE8A92AE7EC0 /* Pods_PukPikGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB6848AD0E431C33E247976 /* Pods_PukPikGame.framework */; };
+		E7345E69275B746300E35964 /* vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7345E68275B746300E35964 /* vocab.swift */; };
+		E7345E88275B879B00E35964 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = E7345E6B275B879B00E35964 /* popup */; };
+		E7345E8A275B879B00E35964 /* exitButton in Resources */ = {isa = PBXBuildFile; fileRef = E7345E6D275B879B00E35964 /* exitButton */; };
+		E7345E8B275B879B00E35964 /* wordButton in Resources */ = {isa = PBXBuildFile; fileRef = E7345E6E275B879B00E35964 /* wordButton */; };
+		E7345E8C275B879B00E35964 /* music mute button in Resources */ = {isa = PBXBuildFile; fileRef = E7345E6F275B879B00E35964 /* music mute button */; };
+		E7345E8E275B879B00E35964 /* pauseButton in Resources */ = {isa = PBXBuildFile; fileRef = E7345E71275B879B00E35964 /* pauseButton */; };
+		E7345E8F275B879B00E35964 /* magic cliffs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7345E72275B879B00E35964 /* magic cliffs.mp3 */; };
+		E7345E90275B879B00E35964 /* star in Resources */ = {isa = PBXBuildFile; fileRef = E7345E73275B879B00E35964 /* star */; };
+		E7345E91275B879B00E35964 /* homeButton in Resources */ = {isa = PBXBuildFile; fileRef = E7345E74275B879B00E35964 /* homeButton */; };
+		E7345E93275B879B00E35964 /* Rock in Resources */ = {isa = PBXBuildFile; fileRef = E7345E76275B879B00E35964 /* Rock */; };
+		E7345E94275B879B00E35964 /* bg in Resources */ = {isa = PBXBuildFile; fileRef = E7345E77275B879B00E35964 /* bg */; };
+		E7345E95275B879B00E35964 /* tile002.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E79275B879B00E35964 /* tile002.png */; };
+		E7345E96275B879B00E35964 /* tile003.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E7A275B879B00E35964 /* tile003.png */; };
+		E7345E97275B879B00E35964 /* tile001.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E7B275B879B00E35964 /* tile001.png */; };
+		E7345E98275B879B00E35964 /* tile000.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E7C275B879B00E35964 /* tile000.png */; };
+		E7345E99275B879B00E35964 /* run6.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E7E275B879B00E35964 /* run6.png */; };
+		E7345E9A275B879B00E35964 /* run4.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E7F275B879B00E35964 /* run4.png */; };
+		E7345E9B275B879B00E35964 /* run5.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E80275B879B00E35964 /* run5.png */; };
+		E7345E9C275B879B00E35964 /* run1.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E81275B879B00E35964 /* run1.png */; };
+		E7345E9D275B879B00E35964 /* run2.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E82275B879B00E35964 /* run2.png */; };
+		E7345E9E275B879B00E35964 /* run3.png in Resources */ = {isa = PBXBuildFile; fileRef = E7345E83275B879B00E35964 /* run3.png */; };
+		E7345E9F275B879B00E35964 /* Pink_Monster in Resources */ = {isa = PBXBuildFile; fileRef = E7345E84275B879B00E35964 /* Pink_Monster */; };
+		E7345EA0275B879B00E35964 /* musicbutton in Resources */ = {isa = PBXBuildFile; fileRef = E7345E85275B879B00E35964 /* musicbutton */; };
+		E7345EA1275B879B00E35964 /* playButton in Resources */ = {isa = PBXBuildFile; fileRef = E7345E86275B879B00E35964 /* playButton */; };
+		E7345EA2275B879B00E35964 /* resumeButton in Resources */ = {isa = PBXBuildFile; fileRef = E7345E87275B879B00E35964 /* resumeButton */; };
+		E7345EA4275B880F00E35964 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7345EA3275B880F00E35964 /* GameView.swift */; };
+		E7345EA6275B882900E35964 /* menuscene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7345EA5275B882900E35964 /* menuscene.sks */; };
+		E7345EA8275B883D00E35964 /* normalLevel.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7345EA7275B883D00E35964 /* normalLevel.sks */; };
+		E7345EAA275B886D00E35964 /* musicBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7345EA9275B886D00E35964 /* musicBG.swift */; };
+		E7345EB6275E1AC700E35964 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7345EB5275E1AC700E35964 /* Home.swift */; };
+		E7345EC6275F0AAB00E35964 /* VocabQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7345EC5275F0AAB00E35964 /* VocabQuiz.swift */; };
+		E7345EC8275FB28300E35964 /* ARCADECLASSIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E7345EC7275FB28300E35964 /* ARCADECLASSIC.TTF */; };
+		E7345ECB275FB46F00E35964 /* Pixel Bug.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7345ECA275FB46F00E35964 /* Pixel Bug.otf */; };
+		E7644723275915C900F68594 /* PukPikGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7644722275915C900F68594 /* PukPikGameApp.swift */; };
+		E7644725275915C900F68594 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7644724275915C900F68594 /* ContentView.swift */; };
+		E7644727275915CB00F68594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7644726275915CB00F68594 /* Assets.xcassets */; };
+		E764472A275915CB00F68594 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7644729275915CB00F68594 /* Preview Assets.xcassets */; };
+		E7644734275915CC00F68594 /* PukPikGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7644733275915CC00F68594 /* PukPikGameTests.swift */; };
+		E764473E275915CC00F68594 /* PukPikGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764473D275915CC00F68594 /* PukPikGameUITests.swift */; };
+		E7644740275915CC00F68594 /* PukPikGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764473F275915CC00F68594 /* PukPikGameUITestsLaunchTests.swift */; };
+		E764474D2759178D00F68594 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E764474C2759178D00F68594 /* GoogleService-Info.plist */; };
+		E7A5B9A12760A3FD00D592B5 /* lookpeach.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A5B9A02760A3FD00D592B5 /* lookpeach.ttf */; };
+		E7F24857275A39F500B80A3D /* PukPikviewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F24856275A39F500B80A3D /* PukPikviewmodel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7644730275915CC00F68594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7644717275915C900F68594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E764471E275915C900F68594;
+			remoteInfo = PukPikGame;
+		};
+		E764473A275915CC00F68594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7644717275915C900F68594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E764471E275915C900F68594;
+			remoteInfo = PukPikGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058461828DCAE047FFFC46B6 /* Pods-PukPikGame-PukPikGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PukPikGame-PukPikGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-PukPikGame-PukPikGameUITests/Pods-PukPikGame-PukPikGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CB6848AD0E431C33E247976 /* Pods_PukPikGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PukPikGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A20BB895953E921A86656A /* Pods_PukPikGame_PukPikGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PukPikGame_PukPikGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5CF52B9D5BD31A70B7249A /* Pods-PukPikGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PukPikGame.release.xcconfig"; path = "Target Support Files/Pods-PukPikGame/Pods-PukPikGame.release.xcconfig"; sourceTree = "<group>"; };
+		8AABA402EE232C9528E19423 /* Pods_PukPikGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PukPikGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B08FC5D17B3A8A133BD6EFD /* Pods-PukPikGame-PukPikGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PukPikGame-PukPikGameUITests.release.xcconfig"; path = "Target Support Files/Pods-PukPikGame-PukPikGameUITests/Pods-PukPikGame-PukPikGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D553FF17E10F2EF4DC21A974 /* Pods-PukPikGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PukPikGameTests.debug.xcconfig"; path = "Target Support Files/Pods-PukPikGameTests/Pods-PukPikGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCE071AA3D482B929C6748AB /* Pods-PukPikGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PukPikGameTests.release.xcconfig"; path = "Target Support Files/Pods-PukPikGameTests/Pods-PukPikGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7345E68275B746300E35964 /* vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocab.swift; sourceTree = "<group>"; };
+		E7345E6B275B879B00E35964 /* popup */ = {isa = PBXFileReference; lastKnownFileType = file; path = popup; sourceTree = "<group>"; };
+		E7345E6D275B879B00E35964 /* exitButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = exitButton; sourceTree = "<group>"; };
+		E7345E6E275B879B00E35964 /* wordButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = wordButton; sourceTree = "<group>"; };
+		E7345E6F275B879B00E35964 /* music mute button */ = {isa = PBXFileReference; lastKnownFileType = file; path = "music mute button"; sourceTree = "<group>"; };
+		E7345E71275B879B00E35964 /* pauseButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = pauseButton; sourceTree = "<group>"; };
+		E7345E72275B879B00E35964 /* magic cliffs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "magic cliffs.mp3"; sourceTree = "<group>"; };
+		E7345E73275B879B00E35964 /* star */ = {isa = PBXFileReference; lastKnownFileType = file; path = star; sourceTree = "<group>"; };
+		E7345E74275B879B00E35964 /* homeButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = homeButton; sourceTree = "<group>"; };
+		E7345E76275B879B00E35964 /* Rock */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rock; sourceTree = "<group>"; };
+		E7345E77275B879B00E35964 /* bg */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg; sourceTree = "<group>"; };
+		E7345E79275B879B00E35964 /* tile002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile002.png; sourceTree = "<group>"; };
+		E7345E7A275B879B00E35964 /* tile003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile003.png; sourceTree = "<group>"; };
+		E7345E7B275B879B00E35964 /* tile001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile001.png; sourceTree = "<group>"; };
+		E7345E7C275B879B00E35964 /* tile000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile000.png; sourceTree = "<group>"; };
+		E7345E7E275B879B00E35964 /* run6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run6.png; sourceTree = "<group>"; };
+		E7345E7F275B879B00E35964 /* run4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run4.png; sourceTree = "<group>"; };
+		E7345E80275B879B00E35964 /* run5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run5.png; sourceTree = "<group>"; };
+		E7345E81275B879B00E35964 /* run1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run1.png; sourceTree = "<group>"; };
+		E7345E82275B879B00E35964 /* run2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run2.png; sourceTree = "<group>"; };
+		E7345E83275B879B00E35964 /* run3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run3.png; sourceTree = "<group>"; };
+		E7345E84275B879B00E35964 /* Pink_Monster */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pink_Monster; sourceTree = "<group>"; };
+		E7345E85275B879B00E35964 /* musicbutton */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicbutton; sourceTree = "<group>"; };
+		E7345E86275B879B00E35964 /* playButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = playButton; sourceTree = "<group>"; };
+		E7345E87275B879B00E35964 /* resumeButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = resumeButton; sourceTree = "<group>"; };
+		E7345EA3275B880F00E35964 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E7345EA5275B882900E35964 /* menuscene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = menuscene.sks; sourceTree = "<group>"; };
+		E7345EA7275B883D00E35964 /* normalLevel.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = normalLevel.sks; sourceTree = "<group>"; };
+		E7345EA9275B886D00E35964 /* musicBG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicBG.swift; sourceTree = "<group>"; };
+		E7345EB5275E1AC700E35964 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E7345EC5275F0AAB00E35964 /* VocabQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabQuiz.swift; sourceTree = "<group>"; };
+		E7345EC7275FB28300E35964 /* ARCADECLASSIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARCADECLASSIC.TTF; sourceTree = "<group>"; };
+		E7345EC9275FB2D200E35964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E7345ECA275FB46F00E35964 /* Pixel Bug.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pixel Bug.otf"; sourceTree = "<group>"; };
+		E764471F275915C900F68594 /* PukPikGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PukPikGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7644722275915C900F68594 /* PukPikGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PukPikGameApp.swift; sourceTree = "<group>"; };
+		E7644724275915C900F68594 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E7644726275915CB00F68594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7644729275915CB00F68594 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E764472F275915CC00F68594 /* PukPikGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PukPikGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7644733275915CC00F68594 /* PukPikGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PukPikGameTests.swift; sourceTree = "<group>"; };
+		E7644739275915CC00F68594 /* PukPikGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PukPikGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E764473D275915CC00F68594 /* PukPikGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PukPikGameUITests.swift; sourceTree = "<group>"; };
+		E764473F275915CC00F68594 /* PukPikGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PukPikGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E764474C2759178D00F68594 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7A5B9A02760A3FD00D592B5 /* lookpeach.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookpeach.ttf; sourceTree = "<group>"; };
+		E7F24856275A39F500B80A3D /* PukPikviewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PukPikviewmodel.swift; sourceTree = "<group>"; };
+		F150F6447E9B837FCF21AB71 /* Pods-PukPikGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PukPikGame.debug.xcconfig"; path = "Target Support Files/Pods-PukPikGame/Pods-PukPikGame.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E764471C275915C900F68594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B097ED3673EE8A92AE7EC0 /* Pods_PukPikGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E764472C275915CC00F68594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255D9E0F690989D7C7E4EF5F /* Pods_PukPikGameTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7644736275915CC00F68594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67ABA1BD01F152097FEF55D1 /* Pods_PukPikGame_PukPikGameUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B0D3431BC0BC5B666AB8B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CB6848AD0E431C33E247976 /* Pods_PukPikGame.framework */,
+				58A20BB895953E921A86656A /* Pods_PukPikGame_PukPikGameUITests.framework */,
+				8AABA402EE232C9528E19423 /* Pods_PukPikGameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE5010916DC31654A62DA898 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F150F6447E9B837FCF21AB71 /* Pods-PukPikGame.debug.xcconfig */,
+				6B5CF52B9D5BD31A70B7249A /* Pods-PukPikGame.release.xcconfig */,
+				058461828DCAE047FFFC46B6 /* Pods-PukPikGame-PukPikGameUITests.debug.xcconfig */,
+				9B08FC5D17B3A8A133BD6EFD /* Pods-PukPikGame-PukPikGameUITests.release.xcconfig */,
+				D553FF17E10F2EF4DC21A974 /* Pods-PukPikGameTests.debug.xcconfig */,
+				DCE071AA3D482B929C6748AB /* Pods-PukPikGameTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7345E6A275B879B00E35964 /* Allmaterial */ = {
+			isa = PBXGroup;
+			children = (
+				E7345EC7275FB28300E35964 /* ARCADECLASSIC.TTF */,
+				E7345ECA275FB46F00E35964 /* Pixel Bug.otf */,
+				E7345E6B275B879B00E35964 /* popup */,
+				E7345E6D275B879B00E35964 /* exitButton */,
+				E7345E6E275B879B00E35964 /* wordButton */,
+				E7345E6F275B879B00E35964 /* music mute button */,
+				E7345E71275B879B00E35964 /* pauseButton */,
+				E7A5B9A02760A3FD00D592B5 /* lookpeach.ttf */,
+				E7345E72275B879B00E35964 /* magic cliffs.mp3 */,
+				E7345E73275B879B00E35964 /* star */,
+				E7345E74275B879B00E35964 /* homeButton */,
+				E7345E76275B879B00E35964 /* Rock */,
+				E7345E77275B879B00E35964 /* bg */,
+				E7345E78275B879B00E35964 /* pink idle */,
+				E7345E7D275B879B00E35964 /* pinkrun */,
+				E7345E84275B879B00E35964 /* Pink_Monster */,
+				E7345E85275B879B00E35964 /* musicbutton */,
+				E7345E86275B879B00E35964 /* playButton */,
+				E7345E87275B879B00E35964 /* resumeButton */,
+			);
+			path = Allmaterial;
+			sourceTree = "<group>";
+		};
+		E7345E78275B879B00E35964 /* pink idle */ = {
+			isa = PBXGroup;
+			children = (
+				E7345E79275B879B00E35964 /* tile002.png */,
+				E7345E7A275B879B00E35964 /* tile003.png */,
+				E7345E7B275B879B00E35964 /* tile001.png */,
+				E7345E7C275B879B00E35964 /* tile000.png */,
+			);
+			path = "pink idle";
+			sourceTree = "<group>";
+		};
+		E7345E7D275B879B00E35964 /* pinkrun */ = {
+			isa = PBXGroup;
+			children = (
+				E7345E7E275B879B00E35964 /* run6.png */,
+				E7345E7F275B879B00E35964 /* run4.png */,
+				E7345E80275B879B00E35964 /* run5.png */,
+				E7345E81275B879B00E35964 /* run1.png */,
+				E7345E82275B879B00E35964 /* run2.png */,
+				E7345E83275B879B00E35964 /* run3.png */,
+			);
+			path = pinkrun;
+			sourceTree = "<group>";
+		};
+		E7345EB1275B917E00E35964 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				E7F24856275A39F500B80A3D /* PukPikviewmodel.swift */,
+			);
+			name = Viewmodel;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E7345EB4275B91BC00E35964 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E7345E68275B746300E35964 /* vocab.swift */,
+			);
+			name = model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E7644716275915C900F68594 = {
+			isa = PBXGroup;
+			children = (
+				E7345E6A275B879B00E35964 /* Allmaterial */,
+				E7644721275915C900F68594 /* PukPikGame */,
+				E7644732275915CC00F68594 /* PukPikGameTests */,
+				E764473C275915CC00F68594 /* PukPikGameUITests */,
+				E7644720275915C900F68594 /* Products */,
+				AE5010916DC31654A62DA898 /* Pods */,
+				1B0D3431BC0BC5B666AB8B45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E7644720275915C900F68594 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E764471F275915C900F68594 /* PukPikGame.app */,
+				E764472F275915CC00F68594 /* PukPikGameTests.xctest */,
+				E7644739275915CC00F68594 /* PukPikGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7644721275915C900F68594 /* PukPikGame */ = {
+			isa = PBXGroup;
+			children = (
+				E7345EC9275FB2D200E35964 /* Info.plist */,
+				E7345EB4275B91BC00E35964 /* model */,
+				E7345EB1275B917E00E35964 /* Viewmodel */,
+				E7644722275915C900F68594 /* PukPikGameApp.swift */,
+				E7644724275915C900F68594 /* ContentView.swift */,
+				E7345EB5275E1AC700E35964 /* Home.swift */,
+				E7345EA9275B886D00E35964 /* musicBG.swift */,
+				E7644726275915CB00F68594 /* Assets.xcassets */,
+				E7345EA7275B883D00E35964 /* normalLevel.sks */,
+				E7345EA5275B882900E35964 /* menuscene.sks */,
+				E7345EA3275B880F00E35964 /* GameView.swift */,
+				E7345EC5275F0AAB00E35964 /* VocabQuiz.swift */,
+				E764474C2759178D00F68594 /* GoogleService-Info.plist */,
+				E7644728275915CB00F68594 /* Preview Content */,
+			);
+			path = PukPikGame;
+			sourceTree = "<group>";
+		};
+		E7644728275915CB00F68594 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E7644729275915CB00F68594 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E7644732275915CC00F68594 /* PukPikGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7644733275915CC00F68594 /* PukPikGameTests.swift */,
+			);
+			path = PukPikGameTests;
+			sourceTree = "<group>";
+		};
+		E764473C275915CC00F68594 /* PukPikGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E764473D275915CC00F68594 /* PukPikGameUITests.swift */,
+				E764473F275915CC00F68594 /* PukPikGameUITestsLaunchTests.swift */,
+			);
+			path = PukPikGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E764471E275915C900F68594 /* PukPikGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7644743275915CC00F68594 /* Build configuration list for PBXNativeTarget "PukPikGame" */;
+			buildPhases = (
+				50AE4BDD1EA5DAD2AF0BFD6B /* [CP] Check Pods Manifest.lock */,
+				E764471B275915C900F68594 /* Sources */,
+				E764471C275915C900F68594 /* Frameworks */,
+				E764471D275915C900F68594 /* Resources */,
+				4A3B657A0864758AE4CE0AE2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PukPikGame;
+			productName = PukPikGame;
+			productReference = E764471F275915C900F68594 /* PukPikGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E764472E275915CC00F68594 /* PukPikGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7644746275915CC00F68594 /* Build configuration list for PBXNativeTarget "PukPikGameTests" */;
+			buildPhases = (
+				350341C479902AE53DAC7325 /* [CP] Check Pods Manifest.lock */,
+				E764472B275915CC00F68594 /* Sources */,
+				E764472C275915CC00F68594 /* Frameworks */,
+				E764472D275915CC00F68594 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7644731275915CC00F68594 /* PBXTargetDependency */,
+			);
+			name = PukPikGameTests;
+			productName = PukPikGameTests;
+			productReference = E764472F275915CC00F68594 /* PukPikGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7644738275915CC00F68594 /* PukPikGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7644749275915CC00F68594 /* Build configuration list for PBXNativeTarget "PukPikGameUITests" */;
+			buildPhases = (
+				7AF5C5EE6668F621DA8B4A09 /* [CP] Check Pods Manifest.lock */,
+				E7644735275915CC00F68594 /* Sources */,
+				E7644736275915CC00F68594 /* Frameworks */,
+				E7644737275915CC00F68594 /* Resources */,
+				F672DF8CBAB345CD9288B832 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E764473B275915CC00F68594 /* PBXTargetDependency */,
+			);
+			name = PukPikGameUITests;
+			productName = PukPikGameUITests;
+			productReference = E7644739275915CC00F68594 /* PukPikGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7644717275915C900F68594 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E764471E275915C900F68594 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E764472E275915CC00F68594 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E764471E275915C900F68594;
+					};
+					E7644738275915CC00F68594 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E764471E275915C900F68594;
+					};
+				};
+			};
+			buildConfigurationList = E764471A275915C900F68594 /* Build configuration list for PBXProject "PukPikGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7644716275915C900F68594;
+			productRefGroup = E7644720275915C900F68594 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E764471E275915C900F68594 /* PukPikGame */,
+				E764472E275915CC00F68594 /* PukPikGameTests */,
+				E7644738275915CC00F68594 /* PukPikGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E764471D275915C900F68594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E764472A275915CB00F68594 /* Preview Assets.xcassets in Resources */,
+				E7345E8C275B879B00E35964 /* music mute button in Resources */,
+				E7345E99275B879B00E35964 /* run6.png in Resources */,
+				E7345E8B275B879B00E35964 /* wordButton in Resources */,
+				E7345EA6275B882900E35964 /* menuscene.sks in Resources */,
+				E7345E88275B879B00E35964 /* popup in Resources */,
+				E7345E93275B879B00E35964 /* Rock in Resources */,
+				E7345E91275B879B00E35964 /* homeButton in Resources */,
+				E7345EC8275FB28300E35964 /* ARCADECLASSIC.TTF in Resources */,
+				E7345E94275B879B00E35964 /* bg in Resources */,
+				E7345E8A275B879B00E35964 /* exitButton in Resources */,
+				E7345E9A275B879B00E35964 /* run4.png in Resources */,
+				E7345ECB275FB46F00E35964 /* Pixel Bug.otf in Resources */,
+				E7345E90275B879B00E35964 /* star in Resources */,
+				E7345EA0275B879B00E35964 /* musicbutton in Resources */,
+				E7345E95275B879B00E35964 /* tile002.png in Resources */,
+				E7345EA8275B883D00E35964 /* normalLevel.sks in Resources */,
+				E7345E96275B879B00E35964 /* tile003.png in Resources */,
+				E7345E98275B879B00E35964 /* tile000.png in Resources */,
+				E7644727275915CB00F68594 /* Assets.xcassets in Resources */,
+				E7345E9D275B879B00E35964 /* run2.png in Resources */,
+				E7345E9E275B879B00E35964 /* run3.png in Resources */,
+				E7345E9B275B879B00E35964 /* run5.png in Resources */,
+				E7345E9C275B879B00E35964 /* run1.png in Resources */,
+				E7345E8F275B879B00E35964 /* magic cliffs.mp3 in Resources */,
+				E764474D2759178D00F68594 /* GoogleService-Info.plist in Resources */,
+				E7345EA2275B879B00E35964 /* resumeButton in Resources */,
+				E7345E8E275B879B00E35964 /* pauseButton in Resources */,
+				E7345E9F275B879B00E35964 /* Pink_Monster in Resources */,
+				E7345EA1275B879B00E35964 /* playButton in Resources */,
+				E7345E97275B879B00E35964 /* tile001.png in Resources */,
+				E7A5B9A12760A3FD00D592B5 /* lookpeach.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E764472D275915CC00F68594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7644737275915CC00F68594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		350341C479902AE53DAC7325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PukPikGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A3B657A0864758AE4CE0AE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PukPikGame/Pods-PukPikGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PukPikGame/Pods-PukPikGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PukPikGame/Pods-PukPikGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50AE4BDD1EA5DAD2AF0BFD6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PukPikGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF5C5EE6668F621DA8B4A09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PukPikGame-PukPikGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F672DF8CBAB345CD9288B832 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PukPikGame-PukPikGameUITests/Pods-PukPikGame-PukPikGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PukPikGame-PukPikGameUITests/Pods-PukPikGame-PukPikGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PukPikGame-PukPikGameUITests/Pods-PukPikGame-PukPikGameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E764471B275915C900F68594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7644725275915C900F68594 /* ContentView.swift in Sources */,
+				E7345E69275B746300E35964 /* vocab.swift in Sources */,
+				E7644723275915C900F68594 /* PukPikGameApp.swift in Sources */,
+				E7F24857275A39F500B80A3D /* PukPikviewmodel.swift in Sources */,
+				E7345EAA275B886D00E35964 /* musicBG.swift in Sources */,
+				E7345EA4275B880F00E35964 /* GameView.swift in Sources */,
+				E7345EC6275F0AAB00E35964 /* VocabQuiz.swift in Sources */,
+				E7345EB6275E1AC700E35964 /* Home.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E764472B275915CC00F68594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7644734275915CC00F68594 /* PukPikGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7644735275915CC00F68594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7644740275915CC00F68594 /* PukPikGameUITestsLaunchTests.swift in Sources */,
+				E764473E275915CC00F68594 /* PukPikGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7644731275915CC00F68594 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E764471E275915C900F68594 /* PukPikGame */;
+			targetProxy = E7644730275915CC00F68594 /* PBXContainerItemProxy */;
+		};
+		E764473B275915CC00F68594 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E764471E275915C900F68594 /* PukPikGame */;
+			targetProxy = E764473A275915CC00F68594 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E7644741275915CC00F68594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7644742275915CC00F68594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7644744275915CC00F68594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F150F6447E9B837FCF21AB71 /* Pods-PukPikGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PukPikGame/Preview Content\"";
+				DEVELOPMENT_TEAM = 645LVSLHGN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PukPikGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.swu.chonlada.PukPikGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7644745275915CC00F68594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5CF52B9D5BD31A70B7249A /* Pods-PukPikGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PukPikGame/Preview Content\"";
+				DEVELOPMENT_TEAM = 645LVSLHGN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PukPikGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.swu.chonlada.PukPikGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E7644747275915CC00F68594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D553FF17E10F2EF4DC21A974 /* Pods-PukPikGameTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 645LVSLHGN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.swu.chonlada.PukPikGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PukPikGame.app/PukPikGame";
+			};
+			name = Debug;
+		};
+		E7644748275915CC00F68594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCE071AA3D482B929C6748AB /* Pods-PukPikGameTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 645LVSLHGN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.swu.chonlada.PukPikGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PukPikGame.app/PukPikGame";
+			};
+			name = Release;
+		};
+		E764474A275915CC00F68594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058461828DCAE047FFFC46B6 /* Pods-PukPikGame-PukPikGameUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 645LVSLHGN;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.swu.chonlada.PukPikGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PukPikGame;
+			};
+			name = Debug;
+		};
+		E764474B275915CC00F68594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B08FC5D17B3A8A133BD6EFD /* Pods-PukPikGame-PukPikGameUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 645LVSLHGN;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.swu.chonlada.PukPikGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PukPikGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E764471A275915C900F68594 /* Build configuration list for PBXProject "PukPikGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7644741275915CC00F68594 /* Debug */,
+				E7644742275915CC00F68594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7644743275915CC00F68594 /* Build configuration list for PBXNativeTarget "PukPikGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7644744275915CC00F68594 /* Debug */,
+				E7644745275915CC00F68594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7644746275915CC00F68594 /* Build configuration list for PBXNativeTarget "PukPikGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7644747275915CC00F68594 /* Debug */,
+				E7644748275915CC00F68594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7644749275915CC00F68594 /* Build configuration list for PBXNativeTarget "PukPikGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E764474A275915CC00F68594 /* Debug */,
+				E764474B275915CC00F68594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7644717275915C900F68594 /* Project object */;
+}

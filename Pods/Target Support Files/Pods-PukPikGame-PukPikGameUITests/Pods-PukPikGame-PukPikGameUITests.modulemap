@@ -1,0 +1,6 @@
+framework module Pods_PukPikGame_PukPikGameUITests {
+  umbrella header "Pods-PukPikGame-PukPikGameUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
